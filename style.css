@@ -1,9 +1,77 @@
+/* =============== Google Font ============= */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
 }
 
+/* ============= Variables ================ */
+:root{
+    --white-color:hsl(0, 0%, 100%);
+    --light-grey:  hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    --paragraph-size: 12px;
+}
+/* ========================================= */
+body{
+    background-color: var(--light-grey);
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+}
+
+.card{
+    background-color: var(--white-color);
+    text-align: center;
+    width: 250px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 8px 13px 15px -6px rgba(0,0,0,0.1);
+}
+
+.card__img{
+    overflow: hidden;
+    height: min-content;
+}
+.card__img img{
+    max-width: 100%;
+    border-radius: 10px;
+
+}
+
+.card__text{
+    padding: 15px 0;
+}
+
+.card__text h4{
+    font-weight:700 ;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.card__text p{
+    font-size: var(--paragraph-size);
+    font-weight: 500;
+    color: var(--grayish-blue);
+    line-height: 1.4;
+}
+
+
 /* ======== Attribution ========= */
-.attribution { font-size: 11px; text-align: center; }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 15px;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
